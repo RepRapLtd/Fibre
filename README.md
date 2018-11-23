@@ -10,7 +10,7 @@ If you don't know anything about the stresses the part will be subjected to, but
 
 So I wrote a FreeCAD (https://www.freecadweb.org/) Python macro to generate the union of a load of random cylinders with their centres distributed in a pre-defined cuboid volume:
 
-![Random fibres](Pix/ranrods)
+![Random fibres](Pix/ranrods.png)
 
 If the cuboid just surrounds the part you want to reinforce, then you just subtract the resulting cylinder pattern from it:
 
