@@ -26,11 +26,11 @@ But you may not want to change the original shape for aesthetic or other reasons
 
 ![FEA Beam](Pix/FEA-beam.png)
 
-As you would expect, the maximum tensile and compressive stresses are at the top and bottom of the beam next to the encasement where the bending moment is greatest.  By had I added some internal cylindrical voids in the regions of maximum stress (also a hole at the other end to hang a weight from):
+As you would expect, the maximum tensile and compressive stresses are at the top and bottom of the beam next to the encasement where the bending moment is greatest.  By hand I added some internal cylindrical voids in the regions of maximum stress (also a hole at the other end to hang a weight from):
 
 ![Reinforced Beam](Pix/reinforced-beam.png)
 
-The next step is to print that and the unreinforced version, hang on some weights, and plot the stiffness of both and see if there's a difference.  If that works, I will write some code automatically to add reinforcing cylinders to regions where the FEA says there is high stress.  Of course, other shapes than cylinders could be used, like thin sheets, thin ellipsoids and so on, depending on the geometry of the part and the shapes and nature of the stresses.
+The next step is to print that and the unreinforced version, hang on some weights, and plot the stiffness of both and see if there's a difference.  If that works, I will write some code automatically to add reinforcing cylinders to regions where the FEA says there is high stress.  Of course, other shapes than cylinders could be used, like thin sheets, thin ellipsoids and so on, depending on the geometry of the part, and on the shapes and nature of the stresses.
 
 
 
