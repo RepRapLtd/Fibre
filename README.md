@@ -30,7 +30,7 @@ As you would expect, the maximum tensile and compressive stresses are at the top
 
 ![Reinforced Beam](Pix/reinforced-beam.png)
 
-The next step is to print that and the unreinforced version, hang on some weights, and plot the stiffness of both and see if there's a difference.  If that works, I will write some code automatically to add reinforcing cylinders to regions where the FEA says there is high stress.  Of course, other shapes than cylinders could be used, like thin sheets, thin ellipsoids and so on, depending on the geometry of the part, and on the shapes and nature of the stresses.
+The next step is to print that and the unreinforced version, hang on some weights, and plot the stiffness of both and see if there's a difference.  If that works, I will write some code automatically to add reinforcing cylinders to regions where the FEA says there is high stress.  Of course, other shapes than cylinders could be used, like thin sheets, thin ellipsoids and so on, depending on the geometry of the part, and on the shapes and nature of the stresses.  Similarly material could be saved by adding large voids in regions of low stress.
 
 
 
