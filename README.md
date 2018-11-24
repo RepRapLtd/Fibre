@@ -4,9 +4,9 @@ Making RepRap prints stronger without doing a lot of work.
 
 The other day a tweet about filling the interior of RepRap prints with more plastic after the print is finished prompted me to look at an old idea of mine from 2005 for reinforcing prints with printed vertical columns (see http://blog.reprap.org/2005/06/strength-of-objects-made-by-layered.html).
 
-It occured to me that this could be generalised to make prints that acted like glassfibre or carbon-fibre reinforced resin for extra strength.  Think about what happens if, in the CAD system, you subtract a thin cylinder (say 0.5mm in diameter) from the interior of a part to be printed.  When the part is sliced the slicer will surround the cylinder with solid material automatically, making it like a length of strong fibre embedded in a weaker material (the print's infill).
+It occurred to me that this could be generalised to make prints that acted like glass-fibre or carbon-fibre reinforced resin for extra strength.  Think about what happens if, in the CAD system, you subtract a thin cylinder (say 0.5mm in diameter) from the interior of a part to be printed.  When the part is sliced the slicer will surround the cylinder with solid material automatically, making it like a length of strong fibre embedded in a weaker material (the print's infill).
 
-If you don't know anything about the stresses the part will be subjected to, but just want to make it generally stronger without setting the infill to 100%, you could just subtract a bunch of random cylinders from it and rely on the slicer and the printing process to make those cylinder 'fibres' automatically.  This would be rather like making the object from a resin composited with glassfibre wool or random chop.
+If you don't know anything about the stresses the part will be subjected to, but just want to make it generally stronger without setting the infill to 100%, you could just subtract a bunch of random cylinders from it and rely on the slicer and the printing process to make those cylinder 'fibres' automatically.  This would be rather like making the object from a resin composited with glass-fibre wool or random chop.
 
 So I wrote a FreeCAD (https://www.freecadweb.org/) Python macro to generate the union of a load of random cylinders with their centres distributed in a pre-defined cuboid volume:
 
@@ -22,7 +22,7 @@ There are quite a few systems that will take a CAD design, apply forces to it an
 
 ![Optimised shape](Pix/fe-shape.png)
 
-But you may not want to change the original shape for aesthetic or other reasons.  You can still apply the internal reinforcing fibres idea to a print though.  Here's FreeCAD doing an FEA stress analysis of a simple rectanular beam encased at the left end, and pushed down at the right:
+But you may not want to change the original shape for aesthetic or other reasons.  You can still apply the internal reinforcing fibres idea to a print though.  Here's FreeCAD doing an FEA stress analysis of a simple rectangular beam encased at the left end, and weighed down at the right:
 
 ![FEA Beam](Pix/FEA-beam.png)
 
