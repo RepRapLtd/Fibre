@@ -32,7 +32,7 @@ As you would expect, the maximum tensile and compressive stresses are at the top
 
 Here is the experimental set-up.  I printed the beams 20mm longer (without any reinforcement in either extension) at the left hand end to give something to grasp.  They were held in a toolmaker's clamp and clocked-up with a dial gauge.  Weights were added on a loop of string [Bowyer's Law - all valid experiments must include at least one (1) length of string]:
 
-![Beam experiment](Pix/beam-experiment.jpg)
+![Beam experiment](Pix/beam-experiment-small.jpg)
 
 And here are the results.  The beams were printed in PLA.  The blue line is the control beam with no reinforcement; the orange is the beam with the thin cylindrical voids:
 
