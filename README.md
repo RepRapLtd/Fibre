@@ -30,7 +30,17 @@ As you would expect, the maximum tensile and compressive stresses are at the top
 
 ![Reinforced Beam](Pix/reinforced-beam.png)
 
-The next step is to print that and the unreinforced version, hang on some weights, and plot the stiffness of both and see if there's a difference.  If that works, I will write some code automatically to add reinforcing cylinders to regions where the FEA says there is high stress.  Of course, other shapes than cylinders could be used, like thin sheets, thin ellipsoids and so on, depending on the geometry of the part, and on the shapes and nature of the stresses.  Similarly material could be saved by subtracting larger shapes to make voids in regions of low stress.
+Here is the experimental set-up.  I printed the beams 20mm longer (without any reinforcement in either extension) at the left hand end to give something to grasp.  They were held in a toolmaker's clamp and clocked-up with a dial gauge.  Weights were added on a loop of string [Bowyer's Law - all valid experiments must include at least one (1) length of string]:
+
+![Beam experiment](Pix/beam-experiment.jpg)
+
+And here are the results.  The beams were printed in PLA.  The blue line is the control beam with no reinforcement; the orange is the beam with the thin cylindrical voids:
+
+![Beam results](Pix/beam-test-graph.png)
+
+The load-deflection curve is slightly non-linear as would be expected for plastics, which are not Hookean materials.  Simplifying to the least-squares-fit straight lines, the stiffness of the un-reinforced control beam is 5.0 N/mm, but the stiffness of the beam with the reinforcing cylindrical voids is 7.7 N/mm (those are the reciprocals of the graph gradients).  That's a 54% improvement.
+
+Next I will write some code automatically to add reinforcing cylinders to regions where the FEA says there is high stress.  Of course, other shapes than cylinders could be used, like thin sheets, thin ellipsoids and so on, depending on the geometry of the part, and on the shapes and nature of the stresses.  Similarly material could be saved by subtracting larger shapes to make voids in regions of low stress.
 
 
 
