@@ -38,7 +38,7 @@ And here are the results.  The beams were printed in PLA.  The blue line is the 
 
 ![Beam results](Pix/beam-test-graph.png)
 
-The load-deflection curve is slightly non-linear as would be expected for plastics, which are not Hookean materials.  Simplifying to the least-squares-fit straight lines, the stiffness of the un-reinforced control beam is 5.0 N/mm, but the stiffness of the beam with the reinforcing cylindrical voids is 7.7 N/mm (those are the reciprocals of the graph gradients).  That's a 54% improvement.
+The load-deflection curves are slightly non-linear as would be expected for plastics, which are not Hookean materials.  Simplifying to the least-squares-fit straight lines, the stiffness of the un-reinforced control beam is 5.0 N/mm, but the stiffness of the beam with the reinforcing cylindrical voids is 7.7 N/mm (those are the reciprocals of the graph gradients).  That's a 54% improvement.
 
 Next I will write some code automatically to add reinforcing cylinders to regions where the FEA says there is high stress.  Of course, other shapes than cylinders could be used, like thin sheets, thin ellipsoids and so on, depending on the geometry of the part, and on the shapes and nature of the stresses.  Similarly material could be saved by subtracting larger shapes to make voids in regions of low stress.
 
