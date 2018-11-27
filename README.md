@@ -34,7 +34,7 @@ Here is the experimental set-up.  I printed the beams 20mm longer (without any r
 
 ![Beam experiment](Pix/beam-experiment-small.jpg)
 
-And here are the results.  The beams were printed in PLA.  The blue line is the control beam with no reinforcement; the orange is the beam with the thin cylindrical voids:
+And here are the results.  The beams were printed in PLA with 20% infill sliced using Cura.  The blue line is the control beam with no reinforcement; the orange is the beam with the thin cylindrical voids:
 
 ![Beam results](Pix/beam-test-graph.png)
 
